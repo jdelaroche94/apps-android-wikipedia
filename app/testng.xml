@@ -1,16 +1,16 @@
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Wiki UI Test" parallel="tests" thread-count="2">
-    <test name="Login" >
+<suite name="Wiki UI Test" parallel="tests" thread-count="1">
+    <test name="Login with Valid Credentials" >
         <classes>
-            <class name="org.wikipedia.test.UITest" />
+            <class name="org.wikipedia.test.LoginUITest" />
         </classes>
     </test>
 
-    <test name="LoginProvider" >
+    <test name="Login with Invalid Credentials" >
         <classes>
-            <class name="org.wikipedia.test.LoginParam" />
+            <class name="org.wikipedia.test.LoginInvalidCredentialsTest" />
         </classes>
     </test>
 
